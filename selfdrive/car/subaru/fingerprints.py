@@ -4,6 +4,7 @@ from openpilot.selfdrive.car.subaru.values import CAR
 Ecu = car.CarParams.Ecu
 
 FW_VERSIONS = {
+  
   CAR.SUBARU_ASCENT: {
     (Ecu.abs, 0x7b0, None): [
       b'\xa5 \x19\x02\x00',
@@ -212,6 +213,7 @@ FW_VERSIONS = {
       b'\xe9\xf6F0\x00',
     ],
   },
+
   CAR.SUBARU_CROSSTREK_HYBRID: {
     (Ecu.abs, 0x7b0, None): [
       b'\xa2 \x19e\x01',
@@ -230,6 +232,35 @@ FW_VERSIONS = {
       b'\xf4!`0\x07',
     ],
   },
+  
+  CAR.SUBARU_CROSSTREK_HYBRID_2021:{
+    (Ecu.parkingAdas, 0x7B1, None): [
+      b'\xf1\x00\x10\x00\x00'
+    ],
+    (Ecu.abs, 0x7D1, None): [
+      b'\xf1\x00\xff\xff\xff'
+    ],
+    (Ecu.fwdRadar, 0x7D0, None): [
+      b'\xf1\x00\x00\x00\x02'
+    ],
+    (Ecu.fwdCamera, 0x7C4, None): [
+      b'\xf1\x00\xac\x03\x00'
+    ],
+    (Ecu.eps, 0x746, None): [
+      b'\n\xc2\x01\x00'
+    ],
+    (Ecu.engine, 0x7E0, None): [
+      b'\xe0!`1\x07'
+    ],
+    (Ecu.abs, 0x7B0, None): [
+      b'\xa2 !e\x00'
+    ],
+    (Ecu.fwdCamera, 0x787, None): [
+      b'\x00\x00el\x00\x00\x00\x00'
+      b'\xf0\xe0\x0e'
+    ],
+  },
+  
   CAR.SUBARU_FORESTER: {
     (Ecu.abs, 0x7b0, None): [
       b'\xa3 \x18\x14\x00',
