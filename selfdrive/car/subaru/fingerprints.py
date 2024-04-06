@@ -233,7 +233,7 @@ FW_VERSIONS = {
     ],
   },
   
-  CAR.SUBARU_CROSSTREK_HYBRID_2021:{
+  CAR.mock:{
     (Ecu.parkingAdas, 0x7B1, None): [
       b'\xf1\x00\x10\x00\x00'
     ],
