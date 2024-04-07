@@ -6,25 +6,25 @@ Ecu = car.CarParams.Ecu
 FW_VERSIONS = {
 
   CAR.SUBARU_CROSSTREK_HYBRID_2021:{
-    (Ecu.parkingAdas, 0x7B1, None): [
+    (Ecu.parkingAdas, 0x7b1, None): [
       b'\xf1\x00\x10\x00\x00'
     ],
-    (Ecu.abs, 0x7D1, None): [
+    (Ecu.abs, 0x7d1, None): [
       b'\xf1\x00\xff\xff\xff'
     ],
-    (Ecu.fwdRadar, 0x7D0, None): [
+    (Ecu.fwdRadar, 0x7d0, None): [
       b'\xf1\x00\x00\x00\x02'
     ],
-    (Ecu.fwdCamera, 0x7C4, None): [
+    (Ecu.fwdCamera, 0x7c4, None): [
       b'\xf1\x00\xac\x03\x00'
     ],
     (Ecu.eps, 0x746, None): [
       b'\n\xc2\x01\x00'
     ],
-    (Ecu.engine, 0x7E0, None): [
+    (Ecu.engine, 0x7e0, None): [
       b'\xe0!`1\x07'
     ],
-    (Ecu.abs, 0x7B0, None): [
+    (Ecu.abs, 0x7b0, None): [
       b'\xa2 !e\x00'
     ],
     (Ecu.fwdCamera, 0x787, None): [
